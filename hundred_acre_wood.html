@@ -1,0 +1,39 @@
+<script>
+
+var heffalumps = { character: "Heffalumps"};
+var eeyore = { character: "Eeyore" };
+var kanga = { character: "Kanga" };
+var christopher = { character: "Christopher Robin" };
+var owl = { character: "Owl" }
+var piglet = { character: "Piglet" };
+var pooh = { character: "Winnie the Pooh" };
+var tigger = { character: "Tigger" };
+var bees = { character: "Bees" };
+var rabbit = { character: "Rabbit" };
+var gopher = { character: "Gopher" };
+
+heffalumps.west = eeyore;
+eeyore.east = heffalumps;
+eeyore.south = kanga;
+kanga.north = eeyore;
+kanga.south = christopher;
+christopher.north = kanga;
+christopher.west = owl;
+christopher.east = rabbit;
+christopher.south = pooh;
+owl.east = christopher;
+owl.south = piglet;
+piglet.north = owl;
+piglet.east = pooh;
+pooh.north = christopher;
+pooh.west = piglet;
+pooh.south = tigger;
+pooh.east = bees;
+bees.west = pooh;
+bees.north = rabbit;
+rabbit.south = bees;
+rabbit.west = christopher;
+rabbit.east = gopher;
+gopher.west = rabbit;
+
+</script>
