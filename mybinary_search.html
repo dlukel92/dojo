@@ -1,0 +1,23 @@
+<script>
+function binarySearch(arr, num){
+    var first = 0
+    var last = arr.length
+    var mid = Math.floor((first + last)/2)
+    while (num != arr[mid] && first < last){
+            if (num < first || num > last){
+              return -1
+            }
+            if (num < arr[mid])
+            {
+                last = mid
+            }
+            else if (num > mid)
+            {
+                first = mid
+            }
+            mid = Math.floor((first + last)/2) 
+        }
+        console.log(mid)
+    }
+binarySearch([1,2,3,4,5,6,7,8,9], 4)
+</script>

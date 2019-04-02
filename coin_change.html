@@ -1,0 +1,30 @@
+
+
+<script>
+function coin_change(num){
+var quarter = 0
+var dime = 0
+var nickel = 0
+var penny = 0
+var remain = num
+
+    while (remain >= 25){
+      quarter += 1;
+      remain -= 25;
+    }
+        while (remain >= 10){
+        remain -= 10;
+        dime++;
+    }
+    while (remain >= 5){
+        remain -= 5;
+        nickel++;
+    }
+    while (remain >= 1){
+        remain -= 1;
+        penny++;
+    }
+    console.log("Quarters: " + quarter + " Dimes: " + dime + " Nickels: " + nickel + " Pennies: " + penny)
+}
+coin_change(13875)
+</script>
