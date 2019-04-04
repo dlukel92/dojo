@@ -1,0 +1,43 @@
+<script>
+let students = [
+    {name: 'Remy', cohort: 'Jan'},
+    {name: 'Genevieve', cohort: 'March'},
+    {name: 'Chuck', cohort: 'Jan'},
+    {name: 'Osmund', cohort: 'June'},
+    {name: 'Nikki', cohort: 'June'},
+    {name: 'Boris', cohort: 'June'}
+];
+function name(arr){   
+for (var i = 0; i < arr.length; i++){
+    console.log("Name: " + students[i].name + ", Cohort: " + students[i].cohort)
+}
+}
+
+name(students)
+
+</script>
+<script>
+let users = {
+    employees: [
+        {'first_name' :  'Miguel', 'last_name' : 'Jones'},
+        {'first_name' : 'Ernie', 'last_name' : 'Bertson'},
+        {'first_name' : 'Nora', 'last_name' : 'Lu'},
+        {'first_name' : 'Sally', 'last_name' : 'Barkyoumb'}
+    ],
+    managers: [
+       {'first_name' : 'Lillian', 'last_name' : 'Chambers'},
+       {'first_name' : 'Gordon', 'last_name' : 'Poe'}
+    ]
+ };
+function info_all(){
+    for (var i = 0; i < employees.length; i++){
+        console.log(i+1, employees[i].last_name, '-', employees[i].first_name, employees[i].last_name.length + employees[i].first_name.length)
+    }
+    for (var i = 0; i < managers.length; i++){
+        console.log(i+1, managers[i].last_name, '-', managers[i].first_name, managers[i].last_name.length + managers[i].first_name.length)
+    }
+}
+var employees = users.employees
+var managers = users.managers
+info_all()
+</script>
